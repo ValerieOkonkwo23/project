@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title> Document </title>
-                <link rel="stylesheet" href="CSS/style2.css">
-    </head>
-    <body>
-                <div class="container">
-                    <div class="card">
-                        <header> Temperature Converter </header>
-                        <div class="temp-fields">
-                            <label for=""> Celsius </label>
-                            <input id="Celsius" value="0" type="number" placeholder="Celsius">
-                         </div>
-                         <div class="temp-fields">
-                             <label for=""> Farenheit </label>
-                             <input id="Farenheit" value="0" type="number" placeholder="Farenheit">
-                         </div>
-                         <div class="temp-fields">
-                             <label for=""> Kelvin </label>
-                             <input id="Kelvin" value="0" type="number" placeholder="Kelvin">
-                         </div>
-                    </div>
-                </div>
-                <div class="send-btn" >
-                    <button id="submit" class="spacing" type="submit" value="submit">Convert</button>
-                    <button id="reset" class="spacing" type="reset" value="reset">Reset</button>
-                </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700,300,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <header>Temperature Converter</header>
+        <div>
+          <div class="temp-fields">
+            <h3 class="spacing">Celsius</h3>
+            <input id="celsius" value="0" />
+          </div>
+          <div class="temp-fields">
+            <h3 class="spacing">Fahrenheit</h3>
+            <input id="fahrenheit" value="0" />
+          </div>
+          <div class="temp-fields">
+            <h3 class="spacing">Kelvin</h3>
+            <input id="kelvin" value="0" />
+          </div>
+        </div>
+        <div>
+          <button id="submit" class="spacing" type="submit" value="submit">
+            Convert
+          </button>
+          <button id="reset" class="spacing" type="reset" value="reset">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
 </html>
